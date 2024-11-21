@@ -41,6 +41,8 @@ if (APPLE)
     target_link_libraries(${PROJECT_NAME} "-framework OpenGL")
 endif()
 
+set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20)
+
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/game")
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_SOURCE_DIR}/game")
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/game")
