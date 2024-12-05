@@ -2,7 +2,7 @@
 
 ## Collision detection
 
-At this point we have simulated velocity and acceleration of the rocket. Now we need to detect when the rocket collides with any other objects in the world. This is called *collision detection*.
+At this point we have simulated velocity and acceleration of the rocket. Now we need to detect when the rocket collides with any other objects in the world. This is called _collision detection_.
 
 We'll use a very simple method for detecting collisions using bounding boxes.
 
@@ -201,7 +201,7 @@ void StartPreflightStage()
 }
 ```
 
-For each frame during preflight, the only to do is check if the user pressed the spacebar to trigger the launch.
+For each frame during preflight, the only to do is check if the user pressed the space bar to trigger the launch.
 
 Find the `RunPreflightStageFrame()` in `main.cpp` and update it as shown below:
 
@@ -228,6 +228,6 @@ case STAGE_PREFLIGHT:
 }
 ```
 
-If you run the game now, the game should start in the preflight stage. If you press the spacebar, the current stage should switch to the launch stage. The preflight instruction message should disappear.
+If you run the game now, the game should start in the preflight stage. If you press the space bar, the current stage should switch to the launch stage. The preflight instruction message should disappear.
 
 The launch stage doesn't do anything yet; we'll take care of that in the next phase of the assignment.
